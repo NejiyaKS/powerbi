@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+          }
+          header{
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+          }
+          .content{
+            padding: 20px;
+          }
+          .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+          }
+          @media(max-width: 600px){
+            .grid{
+                grid-template-columns: 1fr;
+            }
+          }
+          img{
+            max-width: 100%;
+            height: auto;
+          }
+        </style>
+    </head>
+    <body>
+        <header>
+            responsive design example
+        </header>
+       <div class="content">
+        <div class="grid">
+            <div><img src="https://www.greenscene.co.id/wp-content/uploads/2021/10/Sanji-2.jpg"alt="sample img"></div>
+            <div><p>this layout adjust based on screen size</p></div>
+       </div>
+    </div>
+    </body>
+</html>
